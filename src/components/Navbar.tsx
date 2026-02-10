@@ -17,10 +17,8 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/80 backdrop-blur-xl">
       <div className="container mx-auto flex h-16 items-center justify-between px-4 lg:px-8">
-        <a href="#" className="flex items-center gap-2">
-          <img src={tofanIcon} alt="TOFAN TRACKER" className="h-9 w-9 hidden sm:block" />
-          <img src={tofanLogo} alt="TOFAN TRACKER" className="h-8 sm:hidden" />
-          <img src={tofanLogo} alt="TOFAN TRACKER" className="h-7 hidden sm:block" />
+        <a href="#" className="flex items-center">
+          <img src={tofanLogo} alt="TOFAN TRACKER" className="h-8" />
         </a>
 
         <div className="hidden items-center gap-8 md:flex">
