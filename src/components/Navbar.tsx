@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import tofanLogo from "@/assets/tofan-logo.png";
+import tofanIcon from "@/assets/tofan-icon.png";
 
 const navLinks = [
   { label: "Features", href: "#features" },
@@ -16,12 +18,9 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/80 backdrop-blur-xl">
       <div className="container mx-auto flex h-16 items-center justify-between px-4 lg:px-8">
         <a href="#" className="flex items-center gap-2">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-gold">
-            <span className="text-sm font-bold text-primary-foreground">T</span>
-          </div>
-          <span className="font-display text-lg font-bold text-foreground">
-            TOFAN <span className="text-gradient-gold">TRACKER</span>
-          </span>
+          <img src={tofanIcon} alt="TOFAN TRACKER" className="h-9 w-9 hidden sm:block" />
+          <img src={tofanLogo} alt="TOFAN TRACKER" className="h-8 sm:hidden" />
+          <img src={tofanLogo} alt="TOFAN TRACKER" className="h-7 hidden sm:block" />
         </a>
 
         <div className="hidden items-center gap-8 md:flex">

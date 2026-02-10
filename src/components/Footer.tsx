@@ -1,3 +1,6 @@
+import tofanLogo from "@/assets/tofan-logo.png";
+import tofanIcon from "@/assets/tofan-icon.png";
+
 const Footer = () => {
   return (
     <footer className="border-t border-border py-12">
@@ -5,12 +8,8 @@ const Footer = () => {
         <div className="flex flex-col items-center gap-6 md:flex-row md:justify-between">
           <div className="text-center md:text-left">
             <div className="flex items-center justify-center gap-2 md:justify-start">
-              <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-gradient-gold">
-                <span className="text-xs font-bold text-primary-foreground">T</span>
-              </div>
-              <span className="font-display text-lg font-bold text-foreground">
-                TOFAN <span className="text-gradient-gold">TRACKER</span>
-              </span>
+              <img src={tofanIcon} alt="TOFAN TRACKER" className="h-8 w-8" />
+              <img src={tofanLogo} alt="TOFAN TRACKER" className="h-7" />
             </div>
             <p className="mt-2 max-w-xs text-xs text-muted-foreground">
               Smart Accounting & Business Control System. Fast, Smart, In Control.
