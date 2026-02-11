@@ -4,10 +4,10 @@ import heroDashboard from "@/assets/hero-dashboard.png";
 
 const HeroSection = () => {
   return (
-    <section className="relative overflow-hidden pt-32 pb-20 lg:pt-40 lg:pb-32">
+    <section className="relative overflow-hidden pt-32 pb-20 lg:pt-44 lg:pb-36">
       {/* Background effects */}
       <div className="absolute inset-0 bg-radial-gold" />
-      <div className="absolute inset-0 bg-grid-pattern opacity-30" />
+      <div className="absolute inset-0 bg-grid-pattern opacity-20" />
 
       <div className="container relative mx-auto px-4 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
@@ -17,7 +17,7 @@ const HeroSection = () => {
             transition={{ duration: 0.5 }}
             className="mb-6 inline-flex items-center gap-2 rounded-full border border-gold-subtle bg-gradient-gold-subtle px-4 py-1.5"
           >
-            <span className="h-1.5 w-1.5 rounded-full bg-primary" />
+            <span className="h-1.5 w-1.5 rounded-full bg-primary animate-pulse" />
             <span className="text-xs font-medium text-primary">Smart Accounting & Business Control</span>
           </motion.div>
 
@@ -50,15 +50,17 @@ const HeroSection = () => {
             className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center"
           >
             <a
-              href="#cta"
-              className="group flex items-center gap-2 rounded-xl bg-gradient-gold px-7 py-3.5 text-sm font-semibold text-primary-foreground transition-all hover:opacity-90 glow-gold-strong"
+              href="https://demo.tofan-tracker.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center gap-2 rounded-xl bg-gradient-gold px-8 py-4 text-sm font-semibold text-primary-foreground transition-all hover:opacity-90 glow-gold-strong"
             >
               Request a Demo
               <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
             </a>
             <a
               href="#pricing"
-              className="flex items-center gap-2 rounded-xl border border-border bg-secondary px-7 py-3.5 text-sm font-semibold text-foreground transition-all hover:border-primary/30 hover:bg-muted"
+              className="flex items-center gap-2 rounded-xl border border-border bg-secondary px-8 py-4 text-sm font-semibold text-foreground transition-all hover:border-primary/30 hover:bg-muted"
             >
               <Play size={14} />
               View Pricing
@@ -71,7 +73,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
-          className="relative mx-auto mt-16 max-w-5xl lg:mt-20"
+          className="relative mx-auto mt-20 max-w-5xl lg:mt-24"
         >
           <div className="rounded-2xl border border-border bg-card p-2 glow-gold">
             <img
@@ -81,7 +83,6 @@ const HeroSection = () => {
               loading="eager"
             />
           </div>
-          {/* Gradient fade at bottom */}
           <div className="absolute -bottom-10 left-0 right-0 h-20 bg-gradient-to-t from-background to-transparent" />
         </motion.div>
       </div>
