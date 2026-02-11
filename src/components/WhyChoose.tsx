@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Building, Building2, Landmark } from "lucide-react";
-import heroDashboard from "@/assets/hero-dashboard.png";
+const expensesDashboard = "/screenshots/expenses-dark.png";
 
 const audiences = [
   {
@@ -54,8 +54,8 @@ const WhyChoose = () => {
         >
           <div className="rounded-2xl border border-border bg-card p-2 glow-gold">
             <img
-              src={heroDashboard}
-              alt="TOFAN TRACKER Dashboard — real-time business analytics"
+              src={expensesDashboard}
+              alt="TOFAN TRACKER Expenses tracking"
               className="w-full rounded-xl"
               loading="lazy"
             />

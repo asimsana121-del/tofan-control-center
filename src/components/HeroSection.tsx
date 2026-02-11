@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Play } from "lucide-react";
-import heroDashboard from "@/assets/hero-dashboard.png";
+const heroDashboard = "/screenshots/dashboard-dark.png";
 
 const HeroSection = () => {
   return (
