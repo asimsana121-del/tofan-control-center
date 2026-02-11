@@ -1,35 +1,63 @@
+import { MapPin, Phone, Facebook, Instagram } from "lucide-react";
 import tofanLogo from "@/assets/tofan-logo.png";
-import tofanIcon from "@/assets/tofan-icon.png";
 
 const Footer = () => {
   return (
-    <footer className="border-t border-border py-12">
+    <footer className="border-t border-border bg-card py-16">
       <div className="container mx-auto px-4 lg:px-8">
-        <div className="flex flex-col items-center gap-6 md:flex-row md:justify-between">
-          <div className="text-center md:text-left">
-            <div className="flex items-center justify-center gap-2 md:justify-start">
-              <img src={tofanIcon} alt="TOFAN TRACKER" className="h-8 w-8" />
-              <img src={tofanLogo} alt="TOFAN TRACKER" className="h-7" />
-            </div>
-            <p className="mt-2 max-w-xs text-xs text-muted-foreground">
-              Smart Accounting & Business Control System. Fast, Smart, In Control.
+        <div className="grid gap-10 md:grid-cols-3">
+          {/* Column 1: Logo + Description */}
+          <div>
+            <img src={tofanLogo} alt="TOFAN TRACKER" className="h-9" />
+            <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+              An Smart Accounting &amp; Business Control System
+            </p>
+            <p className="text-sm leading-relaxed text-muted-foreground">
+              Which preforme Fast - Smart - In Control
             </p>
           </div>
 
-          <div className="flex items-center gap-6">
-            <a href="#features" className="text-xs text-muted-foreground transition-colors hover:text-foreground">Features</a>
-            <a href="#pricing" className="text-xs text-muted-foreground transition-colors hover:text-foreground">Pricing</a>
-            <a href="#faq" className="text-xs text-muted-foreground transition-colors hover:text-foreground">FAQ</a>
-            <a
-              href="mailto:contact@tofantracker.com"
-              className="rounded-lg bg-secondary px-4 py-2 text-xs font-medium text-foreground transition-all hover:bg-muted"
-            >
-              Contact
-            </a>
+          {/* Column 2: Quick Links */}
+          <div>
+            <h4 className="font-display text-sm font-semibold uppercase tracking-wider text-primary">
+              Quick Links
+            </h4>
+            <ul className="mt-4 flex flex-col gap-3">
+              <li><a href="#" className="text-sm text-muted-foreground transition-colors hover:text-foreground">Home</a></li>
+              <li><a href="#features" className="text-sm text-muted-foreground transition-colors hover:text-foreground">Features</a></li>
+              <li><a href="#pricing" className="text-sm text-muted-foreground transition-colors hover:text-foreground">Pricing</a></li>
+              <li><a href="#cta" className="text-sm text-muted-foreground transition-colors hover:text-foreground">Request Demo</a></li>
+              <li><a href="mailto:contact@tofantracker.com" className="text-sm text-muted-foreground transition-colors hover:text-foreground">Contact</a></li>
+            </ul>
+          </div>
+
+          {/* Column 3: Visit Us */}
+          <div>
+            <h4 className="font-display text-sm font-semibold uppercase tracking-wider text-primary">
+              Visit Us
+            </h4>
+            <ul className="mt-4 flex flex-col gap-4">
+              <li className="flex items-start gap-3">
+                <MapPin size={16} className="mt-0.5 shrink-0 text-primary" />
+                <span className="text-sm text-muted-foreground">Ferdouse St, Herat - Afghanistan</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <Phone size={16} className="shrink-0 text-primary" />
+                <span className="text-sm text-muted-foreground">0744442148</span>
+              </li>
+            </ul>
+            <div className="mt-5 flex items-center gap-4">
+              <a href="#" aria-label="Facebook" className="flex h-9 w-9 items-center justify-center rounded-lg border border-border text-muted-foreground transition-colors hover:border-primary/30 hover:text-primary">
+                <Facebook size={16} />
+              </a>
+              <a href="#" aria-label="Instagram" className="flex h-9 w-9 items-center justify-center rounded-lg border border-border text-muted-foreground transition-colors hover:border-primary/30 hover:text-primary">
+                <Instagram size={16} />
+              </a>
+            </div>
           </div>
         </div>
 
-        <div className="mt-8 border-t border-border pt-6 text-center">
+        <div className="mt-12 border-t border-border pt-6 text-center">
           <p className="text-xs text-muted-foreground">
             © {new Date().getFullYear()} TOFAN TRACKER (TOFAN ONE). All rights reserved.
           </p>
