@@ -122,6 +122,38 @@ const FeaturesSection = () => {
           </p>
         </motion.div>
 
+        {/* Screenshot showcase */}
+        <div className="mt-16 grid gap-6 md:grid-cols-2">
+          {[
+            { src: "/screenshots/dashboard-dark.png", label: "Professional Dashboard" },
+            { src: "/screenshots/transactions-dark.png", label: "Transactions & Accounting" },
+            { src: "/screenshots/invoicing-dark.png", label: "Invoicing System" },
+            { src: "/screenshots/inventory-dark.png", label: "Inventory Management" },
+          ].map((item, index) => (
+            <motion.div
+              key={item.label}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1 }}
+              className="group overflow-hidden rounded-xl border border-border bg-card transition-all duration-300 hover:border-primary/25 hover:shadow-[0_0_30px_hsl(43_90%_55%/0.06)]"
+            >
+              <div className="p-1.5">
+                <img
+                  src={item.src}
+                  alt={`TOFAN TRACKER — ${item.label}`}
+                  className="w-full rounded-lg"
+                  loading="lazy"
+                />
+              </div>
+              <div className="px-5 pb-4 pt-2">
+                <span className="text-sm font-semibold text-primary">{item.label}</span>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* Feature cards grid */}
         <div className="mt-16 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {features.map((feature, index) => (
             <motion.div

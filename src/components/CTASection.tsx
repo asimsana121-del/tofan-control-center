@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
-import heroDashboard from "@/assets/hero-dashboard.png";
+const reportsDashboard = "/screenshots/reports-dark.png";
 
 const CTASection = () => {
   return (
@@ -51,8 +51,8 @@ const CTASection = () => {
           >
             <div className="rounded-xl border border-border bg-card/50 p-1.5 glow-gold">
               <img
-                src={heroDashboard}
-                alt="TOFAN TRACKER Dashboard preview"
+                src={reportsDashboard}
+                alt="TOFAN TRACKER Reports overview"
                 className="w-full rounded-lg"
                 loading="lazy"
               />
