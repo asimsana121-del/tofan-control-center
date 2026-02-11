@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import {
+  LayoutDashboard,
   Calculator,
+  TrendingDown,
   Wallet,
   Users2,
   Landmark,
@@ -18,74 +20,84 @@ import {
 
 const features = [
   {
+    icon: LayoutDashboard,
+    title: "Professional Dashboard",
+    description: "An excellent and professional dashboard to manage all reports available in the program and branches.",
+  },
+  {
     icon: Calculator,
     title: "Accounting Management",
     description: "Complete double-entry bookkeeping, chart of accounts, journal entries, and automated reconciliation in one place.",
   },
   {
+    icon: TrendingDown,
+    title: "Expenses Tracker",
+    description: "Prepares and income all expenses and income on a daily basis.",
+  },
+  {
     icon: Wallet,
-    title: "Budget Management",
-    description: "Full budget management by month and by organization branches, with flexible data creation.",
+    title: "Budget Manager",
+    description: "Complete budget management for a month and for the organization's branches, the ability to create different data.",
   },
   {
     icon: Users2,
     title: "Parties Manager",
-    description: "Manage accounts receivable and payable with business partners your organization works with.",
+    description: "Ability to add accounts receivable and payable with business partners that an organization needs.",
   },
   {
     icon: Landmark,
     title: "Capital Manager",
-    description: "Accurate calculation of all cash and non-cash capital, including barcode creation and printing for each record.",
+    description: "Accurate calculation of all cash and non-cash capital of a company and the ability to create and print barcodes for each registered record.",
   },
   {
     icon: Package,
     title: "Inventory & Logistic",
-    description: "Warehouse and logistics management, from purchase forms to warehouse registration.",
+    description: "Warehouse management and company logistics management from creating a purchase form to registering in a designated warehouse.",
   },
   {
     icon: ShoppingCart,
     title: "Sell Service or Product",
-    description: "Ability to sell services and products independently.",
+    description: "Possibility of selling services and products separately.",
   },
   {
     icon: FileText,
-    title: "Billing & Invoicing",
+    title: "Invoicing",
     description: "Create professional invoices, track payments, manage subscriptions, and automate recurring billing.",
   },
   {
     icon: FileSignature,
-    title: "Contract Management",
-    description: "Create customer contracts, archive documents, and print contracts on custom letterheads.",
+    title: "Contract",
+    description: "Creating a contract for each customer and recording customer documents as an archive and printing the contract on the desired letterhead.",
   },
   {
     icon: MessageCircle,
     title: "Chat Group",
-    description: "Internal group chat with member tagging for event notifications.",
+    description: "Having a group chat and the ability to tag members to inform them of events.",
   },
   {
     icon: BarChart3,
-    title: "Smart Reports & Analytics",
-    description: "One-click profit & loss, balance sheets, cash flow reports, and custom dashboards.",
+    title: "Smart Reports",
+    description: "Generate profit & loss, balance sheets, cash flow reports, and custom dashboards with a single click.",
   },
   {
     icon: Building2,
     title: "Branch Manager",
-    description: "Manage multiple organization branches based on admin-defined policies.",
+    description: "Ability to manage branches of an organization according to the policy created by the admin.",
   },
   {
     icon: ScrollText,
-    title: "Log Management",
-    description: "Complete logging of every system event across all access levels.",
+    title: "Log Manager",
+    description: "A complete log of every event that occurs in the application by different access levels.",
   },
   {
     icon: Activity,
     title: "Real-time Monitoring",
-    description: "Live dashboards for revenue, expenses, user activity, and system health.",
+    description: "Live dashboards showing revenue, expenses, user activity, and system health at a glance.",
   },
   {
     icon: Lock,
     title: "User & Role Control",
-    description: "Advanced role-based access with custom permissions and enterprise-grade user management.",
+    description: "Define custom roles, assign permissions, and manage team access with enterprise-grade user management.",
   },
 ];
 
@@ -106,7 +118,7 @@ const FeaturesSection = () => {
             <span className="text-gradient-gold">Run Your Business</span>
           </h2>
           <p className="mt-5 text-lg text-muted-foreground">
-            All the needs that a company or organization requires in today's business environment — all in one powerful platform.
+            All the needs that a company or organization needs in today's business, all in one place.
           </p>
         </motion.div>
 
