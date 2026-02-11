@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Building, Building2, Landmark } from "lucide-react";
+import heroDashboard from "@/assets/hero-dashboard.png";
 
 const audiences = [
   {
@@ -42,6 +43,23 @@ const WhyChoose = () => {
           <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground lg:text-xl">
             One platform built to power businesses of every size — from startups to enterprises.
           </p>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.2, duration: 0.6 }}
+          className="mx-auto mt-14 max-w-4xl"
+        >
+          <div className="rounded-2xl border border-border bg-card p-2 glow-gold">
+            <img
+              src={heroDashboard}
+              alt="TOFAN TRACKER Dashboard — real-time business analytics"
+              className="w-full rounded-xl"
+              loading="lazy"
+            />
+          </div>
         </motion.div>
 
         <div className="mt-20 grid gap-6 md:grid-cols-3">
